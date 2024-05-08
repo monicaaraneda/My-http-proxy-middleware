@@ -35,5 +35,26 @@ curl http://localhost:3001/api/anything
 ``` 
 Esta solicitud va a tu servidor Express, que la redirige a httpbin.org bajo la ruta /anything, eliminando la parte /api debido a la configuración de pathRewrite.
 
+
+
 ### Analyze the Response
 Observa la respuesta que recibes de httpbin.org. Debería ser un JSON mostrando varios detalles de tu solicitud, lo que prueba que el proxy está funcionando. Puedes probar otros endpoints como /api/ip o /api/user-agent para ver diferentes respuestas de httpbin.org.
+
+``` bash
+{
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "*/*", 
+    "Host": "httpbin.org", 
+    "User-Agent": "curl/8.4.0", 
+    "X-Amzn-Trace-Id": "Root=1-663c02bb-6dffb83a0fce0fef6f8956f2"
+  }, 
+  "json": null, 
+  "method": "GET", 
+  "origin": "190.82.247.131", 
+  "url": "https://httpbin.org/anything"
+}
+``` 
