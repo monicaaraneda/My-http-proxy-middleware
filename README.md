@@ -1,3 +1,22 @@
+## Pre-requisitos
+
+Este proyecto requiere las siguientes dependencias y versiones de software para su correcto funcionamiento:
+
+### Dependencias
+
+- **NestJS Core**: `@nestjs/core@10.3.8`
+- **Type Definitions for HTTP Proxy Middleware**: `@types/http-proxy-middleware@1.0.0`
+- **Node.js Type Definitions**: `@types/node@20.12.11`
+- **Express**: `express@4.19.2`
+- **HTTP Proxy Middleware**: `http-proxy-middleware@3.0.0`
+
+### Entorno de ejecución
+
+- **Node.js**: `v18.19.1`
+- **npm**: `10.2.4`
+
+Asegúrate de tener instaladas estas versiones para evitar problemas de compatibilidad.
+
 ### Install Necessary Packages
 Install Express and http-proxy-middleware:
 
